@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <!--  Content (배너이미지) 부분 -->
+  <div> <img src="/images/banner1.png" class="img-fluid" alt="배너이미지" width="100%"> </div>
+
+  <!-- 컨텐츠(예, 쇼핑몰일경우 판매제품리스트)헤더부분 -->
+   <div class="container-fluid" style="border: solid 20px white; border-radius: 1px">
+     <div class="panel panel-default">
+   	  <div class="panel-heading">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">쇼핑몰</a></li>
+            <li class="breadcrumb-item">제품검색</a></li>
+          </ol>
+        </nav>
+   	  </div>
+      <div class="container">  <!-- container class 가 페이지의 컨텐츠영역을 지정 -->
+      <div class="jumbotron" style="width:500px; margin:auto">
+
+      <div class="bm-login-form" style='width:400px; margin-left:auto; margin-right:auto; border:1px'>
+
+        <div class="starter-template">
+          <h5>제품검색</h5> <hr>
+        </div>
+
+       <form name=join onsubmit="return validate()" method=get action="/product/searchprod">
+         <div class="form-group">
+          <label for="exampleFormControlSelect1">상품분류</label>
+           <select class="form-control" id="producttype" name=producttype>
+             <option>선풍기</option>
+             <option>에어컨</option>
+             <option>냉풍기</option>
+             <option>미니선풍기</option>
+             <option>냉장고</option>
+             <option>얼풍기</option>
+           </select>
+        </div>
+         <div class="form-group">
+           <label for="exampleInputPassword1">상품명</label>
+           <input type="text" class="form-control" name="productname" id="productname" placeholder="상품명을 입력해주세요.">
+         </div>
+         <div class="form-group">
+           <label for="exampleInputPassword2">제조사</label>
+           <input type="text" class="form-control" name="manufacturer" id="manufacturer" placeholder="제조사를 입력해주세요.">
+         </div>
+         <div class="form-group">
+           <label for="exampleInputEmail1">모델명</label>
+           <input type="text" class="form-control" name="model" id="model" placeholder="모델명을 입력하세요">
+         </div>
+           <hr>
+           <button type="submit" class="btn btn-primary">검색</button>
+           <hr>
+        </form>
+       </div>
+       </div>
+      </div><!-- /.container -->
+  </div>
